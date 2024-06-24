@@ -1,75 +1,54 @@
 # Smart-Contract-Management-Project-Function-Frontend_Metacrafter
 
-# Next.js/Hardhat Starter Project
-
-Welcome to the Next.js and Hardhat starter project! This repository provides a basic setup for integrating Ethereum smart contracts with a Next.js frontend.
-
-## Setup Instructions
 
 ### Prerequisites
+- Node.js and npm installed on your computer.
 
-- Node.js and npm installed on your machine.
+### Setup Instructions
 
-### Getting Started
-
-1. **Clone the repository:**
-git clone https://github.com/your-username/nextjs-hardhat-starter.git
-cd nextjs-hardhat-starter
-
-markdown
-Copy code
-
-2. **Install dependencies:**
+#### Install Dependencies
+Open your terminal and navigate to the project directory:
+```bash
+cd /path/to/your/project
+```
+Install npm dependencies:
+```bash
 npm install
+```
 
-sql
-Copy code
-
-3. **Run a local Ethereum node:**
-Open a second terminal and start a local Ethereum node using Hardhat:
+#### Run Local Ethereum Node
+Open a second terminal in your VS Code or another terminal window.
+Start a local Ethereum node using Hardhat:
+```bash
 npx hardhat node
+```
 
-markdown
-Copy code
-
-4. **Deploy smart contracts:**
-Open a third terminal and deploy your smart contracts to the local network:
+#### Deploy Smart Contracts
+Open a third terminal in VS Code or another terminal window.
+Deploy your smart contracts to the local network:
+```bash
 npx hardhat run --network localhost scripts/deploy.js
+```
+Replace `scripts/deploy.js` with the path to your actual deployment script if it's located elsewhere.
 
-mathematica
-Copy code
-
-5. **Launch the frontend:**
+#### Launch Frontend
 Back in the first terminal, start the Next.js development server:
+```bash
 npm run dev
+```
 
-markdown
-Copy code
-
-6. **Access the application:**
-Open your web browser and navigate to:
+### Accessing Your Project
+Once the development server is running, you can access your project in a web browser at:
+```
 http://localhost:3000/
+```
 
-markdown
-Copy code
+### Additional Notes
+- Make sure all three terminals remain open while you're working on the project. Each terminal serves a different purpose:
+  - First terminal: Installing dependencies and running the frontend.
+  - Second terminal: Running the local Ethereum node.
+  - Third terminal: Deploying smart contracts.
+- Ensure that Hardhat is correctly configured (`hardhat.config.js`) with the necessary network settings (`localhost` in this case) and that your `deploy.js` script correctly references your contracts.
 
-## Project Structure
-
-- `/contracts`: Contains your Ethereum smart contracts.
-- `/scripts`: Contains deployment scripts for your contracts.
-- `/pages`: Contains your Next.js pages and API routes.
-- `/components`: Contains reusable React components.
-
-## Additional Information
-
-- Make sure all three terminals remain open while working on the project.
-- Customize `hardhat.config.js` for different network configurations.
-- Update `scripts/deploy.js` to deploy specific smart contracts.
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+### Author
+Ritik kumar (linkdein id :-https://www.linkedin.com/in/ritik-kumar-8376ba225/)
