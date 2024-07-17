@@ -107,13 +107,13 @@ export default function HomePage() {
   return (
     <main className="container">
       <header>
-        <h1>Welcome to the Metacrafters Crypto ATM!</h1>
+        <h1>Welcome to the Metacrafters Crypto Portal!</h1>
         <p><b>Here, Ritik Kumar</b></p>
       </header>
       {initUser()}
       <section className="info">
-        <h2>About This ATM</h2>
-        <p>This decentralized ATM allows you to deposit and withdraw ETH using your MetaMask wallet.</p>
+        <h2>About This Portal</h2>
+        <p>This decentralized portal allows you to deposit and withdraw ETH using your MetaMask wallet.</p>
         <p>Connect your MetaMask wallet to get started and manage your funds securely on the Ethereum blockchain.</p>
       </section>
       <section className="instructions">
@@ -127,27 +127,27 @@ export default function HomePage() {
       </section>
       <style jsx>{`
         .container {
+          font-family: 'Roboto', sans-serif;
           text-align: center;
-          font-family: Arial, sans-serif;
           padding: 20px;
-          background-color: #f4f4f4;
+          background-color: #e0f7fa;
           border-radius: 10px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          max-width: 600px;
+          max-width: 700px;
           margin: 0 auto;
         }
         header {
           margin-bottom: 20px;
         }
         h1 {
-          color: #333;
+          color: #00796b;
         }
         .info, .instructions {
           margin: 20px 0;
           text-align: left;
         }
         .info h2, .instructions h2 {
-          color: #666;
+          color: #004d40;
         }
         .instructions ol {
           list-style: none;
@@ -156,21 +156,21 @@ export default function HomePage() {
         .instructions ol li {
           margin: 10px 0;
           padding: 10px;
-          background-color: #fff;
+          background-color: #ffffff;
           border-radius: 5px;
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
         button {
           margin: 10px;
           padding: 10px 20px;
-          background-color: #0070f3;
+          background-color: #004d40;
           color: white;
           border: none;
           border-radius: 5px;
           cursor: pointer;
         }
         button:hover {
-          background-color: #005bb5;
+          background-color: #00251a;
         }
       `}</style>
     </main>
